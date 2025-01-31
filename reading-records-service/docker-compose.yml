@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  records-db:
+    image: mysql:8.0
+    container_name: records-db
+    ports:
+      - "3310:3306"
+    environment:
+      - MYSQL_DATABASE=mydb
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=root_password
+    volumes:
+      - records_data:/var/lib/mysql
+
+volumes:
+  records_data:

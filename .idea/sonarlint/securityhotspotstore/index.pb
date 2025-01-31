@@ -345,3 +345,9 @@ m
 rreading-records-service/src/test/java/ru/javaguru/readingrecordsservice/ReadingRecordsServiceApplicationTests.java,8\d\8d8dcc796331a62ac0c6665ef7d2566cbfb4be27
 Å
 Q.idea/sonarlint/securityhotspotstore/6/c/6cb2665f2ff1072460b40b54cc5021ca8b4bc0e8,9\3\93076ecc163b583ca577602d622a0047b3ca8c4e
+M
+books-service/docker-compouse,4\7\47b458378edd0497cf709272074e4a446ff6cdc2
+P
+ books-service/docker-compose.yml,2\9\29f8307e2e46afefb3f8edbb0cbb5c58f67a8378
+Z
+*reading-records-service/docker-compose.yml,2\1\218c347b8e19e48a82bfd1a8575e8cdf7d8bbc24
