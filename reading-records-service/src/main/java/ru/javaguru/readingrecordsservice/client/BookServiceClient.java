@@ -2,6 +2,7 @@ package ru.javaguru.readingrecordsservice.client;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
@@ -18,7 +19,7 @@ public class BookServiceClient {
     public BookDto getBookInfo(Long bookId) {
         try {
             return template.getForObject(
-                    "http://BOOKS-SERVICE/api/books/" + bookId,
+                    "http://books-service/api/books/" + bookId,
                     BookDto.class
             );
         } catch (HttpClientErrorException e) {

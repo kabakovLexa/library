@@ -7,13 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="reading-records-service" />
-        <module name="eureka-server" />
+        <module name="api-gateway" />
         <module name="books-service" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
       <module name="books-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="reading-records-service" options="-parameters" />
